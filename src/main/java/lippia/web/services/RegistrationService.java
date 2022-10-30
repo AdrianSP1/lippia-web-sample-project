@@ -2,7 +2,6 @@ package lippia.web.services;
 
 import com.crowdar.core.actions.ActionManager;
 
-import lippia.web.constants.LoginConstants;
 import lippia.web.constants.RegistrationConstants;
 
 
@@ -17,7 +16,7 @@ public class RegistrationService extends ActionManager {
     }
     public static void clickRegister()
     {
-        click(RegistrationConstants.BTN_REGISTRAR_XPATH);
+        click(RegistrationConstants.BTN_REGISTRAR);
     }
 
     }

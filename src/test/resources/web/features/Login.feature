@@ -1,17 +1,17 @@
 Feature: Pruebas de login de la web en la seccion(MY ACCOUNT- LOGIN)
 
   Background:
-    Given El cliente se encuentra en la pagina Automation Practice
-    And El cliente hace click en el boton My Account de la barra de navegacion
+     Given El cliente se encuentra en la pagina Automation Practice
+      And El cliente hace click en el boton My Account de la barra de navegacion
 
-  @Smoke
-  Scenario: El cliente ingresa a su cuenta(HappyPath)
+    @Login
+   Scenario: El cliente ingresa a su cuenta(HappyPath)
     When El cliente ingresa su username
     And El cliente ingresa su password
     And El Cliente hace click en el boton de Login
     Then El cliente accede a su cuenta
 
-
+    @LoginError
     Scenario Outline: El cliente intenta acceder a su cuenta con datos de logueo incorrectos
       When El cliente ingresa su username<username>
       And El cliente ingresa su password<password>

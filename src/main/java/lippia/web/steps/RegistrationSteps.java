@@ -8,7 +8,7 @@ import lippia.web.Validator.RegistrationValidate;
 import lippia.web.services.RegistrationService;
 
 public class RegistrationSteps extends PageSteps {
-    @When("El Cliente ingresa un mail(.*)$")
+    @When("El Cliente ingresa un mail (.*)$")
     public void ElClienteIngresaUnMail(String mail){
         RegistrationService.registrarUserName(mail);
     }
