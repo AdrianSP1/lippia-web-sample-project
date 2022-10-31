@@ -10,7 +10,7 @@ import lippia.web.services.RegistrationService;
 public class RegistrationSteps extends PageSteps {
     @When("El Cliente ingresa un mail (.*)$")
     public void ElClienteIngresaUnMail(String mail){
-        RegistrationService.registrarUserName(mail);
+        RegistrationService.randomEmail(mail);
     }
     @And("El Cliente ingresa un password(.*)$")
     public void ElClienteIngresaUnPassword(String password){

@@ -2,7 +2,7 @@ Feature:  Pruebas sobre el registro de cuenta en la pagina my-account
   Background:
     Given El cliente se encuentra en la pagina Automation Practice
     And El cliente hace click en el boton My Account de la barra de navegacion
-    @Smoke
+    @RegistroExitoso
    Scenario Outline: El Cliente se registra de manera exitosa
       When El Cliente ingresa un mail <mail>
       And El Cliente ingresa un password<password>
@@ -11,7 +11,7 @@ Feature:  Pruebas sobre el registro de cuenta en la pagina my-account
 
      Examples:
      |            mail        |    password      |
-     |pepegomez99@test.com|pepegomez123|
+     |     @test.com     |  Pepegomez2015     |
 
     @RegistroIncorrecto
     Scenario Outline:El Cliente intenta registrarse con mail no valido
@@ -20,4 +20,4 @@ Feature:  Pruebas sobre el registro de cuenta en la pagina my-account
     Then El Cliente hace click en el boton Register para registrarse
     Examples:
       |      invalidMail       | password |
-      |pepelopez1@.com| pepe123  |
+      |pepelopez1@.com| Pepesde123  |
