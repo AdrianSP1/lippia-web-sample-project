@@ -31,4 +31,12 @@ public class RegistrationSteps extends PageSteps {
     @Then("Se obtiene error en la pagina por password invalido")
     public void ErrorPassInvalido(){
         RegistrationValidate.verificarPassNull();}
+
+
+
+    @When("El cliente ingresa un mail no valido {string}")
+    public void elClienteIngresaUnMailNoValidoMailInvalid(String mailInvalid) {
+        RegistrationService.randomEmail(mailInvalid);
+    }
+    
 }
